@@ -1,0 +1,101 @@
+/* Importaciones */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+/* Colores */
+:root {
+    --verdeColor: #8FBD25;
+    --verdeColorOscuro : #2498a9;
+    --verdeColorClaro: #8FBD25;
+    --rojoColor: rgb(209, 15, 80);
+    --turnosColor: rgb(250, 93, 145);
+    --turnosFijo: rgb(118, 248, 168);
+    --verdeFondoMenuEx: rgb(108, 245, 227);
+    --colorSidebarFondo: #2498a9;
+    --colorMenuFondo: #8FBD25;
+    --colorMenu: white;
+    --colorQatar: #8D1C3D;
+}
+
+/* Estilos generales */
+* {
+    font-family: 'Fredoka', sans-serif;
+}
+
+html, body {
+    background-image: url('https://i.pinimg.com/originals/45/fc/79/45fc7937eeb776acff173c30a412e4e3.jpg');
+}
+
+/* Estilo del Scrollbar. */
+body::-webkit-scrollbar 
+{
+    width: 5px;             
+}
+  
+body::-webkit-scrollbar-track 
+{
+    background-color: rgb(30, 30, 30);  
+}
+  
+body::-webkit-scrollbar-thumb 
+{
+    background: rgb(240, 141, 141); 
+}
+
+/* Centrar, estilo para centrar con display */
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo de los strong, hr e h4 */
+strong, hr, h4 {
+    color: var(--colorQatar);
+    font-size: 18px;
+}
+
+/* Estilo de la carta de los grupos (Ej: Grupo A) */
+.card-grupos {
+    background-color: rgb(234, 234, 234);
+    border: 0;
+    border-radius: 0px 10px 0px 10px;
+}
+
+/* Estilo del hr de la Card */
+.card-hr {
+    width: 35%;
+}
+
+/* Estilo de la imagen que contenera la bandera */
+.img-bandera {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+/* Estilo del boton de limpiar en los grupos */
+.btn-limpiar {
+    background-color: var(--colorQatar);
+    border: 0;
+    border-radius: 0px 10px 0px 10px;
+    width: 100%;
+}
+
+/* Estilo del contenedor de los equipos */
+.contenedor-equipos {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* Ordenar en vertical en base al display */
+.vertical {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Ordenar en horizontal en base al display */
+.horizontal {
+    display: flex;
+    flex-direction: column;
+}

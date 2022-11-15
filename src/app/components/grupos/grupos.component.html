@@ -1,0 +1,31 @@
+<!-- Fase de Grupos -->
+<div class="row centrar">
+
+    <!-- Card -->
+    <div class="col-3 card card-grupos m-4" style="width: 15rem;" *ngFor="let item of [1,1,1,1,1,1,1,1]; let i = index">
+
+      <!-- Cuerpo de la Card -->
+      <div class="card-body">
+
+        <!-- Titulo -->
+        <strong class="card-title"> Grupo {{ 'ABCDEFGH'[i] }} </strong>
+        <hr class="card-hr">
+
+        <!-- Equipos -->
+        <div class="contenedor-equipos">
+          <div class="vertical" (click)="asignarLugar( seleccion.nombre, seleccion.img, i )" *ngFor="let seleccion of devolverEquipos(i);">
+            <img [src]="seleccion.img" class="img-bandera">
+            <p class="ms-3"> {{ seleccion.nombre }} </p>
+          </div>
+        </div>
+
+        <!-- Boton para Limpiar -->
+        <div class="text-center" (click)="limpiar()">
+          <a href="#" class="btn btn-secondary btn-limpiar"> Limpiar </a>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
